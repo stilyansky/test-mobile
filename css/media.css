@@ -41,8 +41,8 @@
 @media only screen and (max-width: 500px) {
     .wrapper {
         zoom: 60%;
-        transform: translate(-43%, 0);
-        max-height: 10rem !important;
+        /* transform: translate(-43%, 0); */
+        max-height: 10rem;
     }
 
     .main-content {
