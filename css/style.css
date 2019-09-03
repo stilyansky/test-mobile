@@ -121,6 +121,7 @@ button:active {
     margin: 0px;
     padding: 0px;
     width: 100vw;
+    margin-top: 10px;
 }
 
 .text-wrapper, .links-wrapper{
@@ -145,13 +146,15 @@ button:active {
 
 .col-one a, .col-two a, .copy-right a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
+    color: red;
 }
 
 .copy-right{
     font-size: 0.7rem;
     display: inline-block;
-    color: #fff;
+    /* color: #fff; */
+    color: red;
 }
 .footer-bg,
 .clouds {
