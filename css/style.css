@@ -26,10 +26,28 @@ html {
     position: absolute;
 }
 
+.logo{
+    width: 30%;
+}
+
 .background {
     object-fit: cover;
     width: 100vw;
     height: 100vw;
+}
+
+.ufo{
+    width: 60%;
+    top: 7%;
+    left: 17%;
+}
+
+.cow{
+    width: 30%;
+}
+
+.moops{
+    width: 30%;
 }
 
 .footer-bg,
