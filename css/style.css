@@ -3,9 +3,11 @@
     padding: 0px;
 }
 
-html {
+html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .wrapper {
@@ -69,6 +71,7 @@ html {
 }
 
 .action{
+    z-index: 1;
     position: relative;
     text-align: center;
     top: 105vw;
@@ -107,9 +110,50 @@ button:active {
     color: #919191;
 }
 
+.footer{
+    position: absolute;
+    top: 165vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-mobile{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+.text-wrapper, .links-wrapper{
+    display: inline-block;
+    text-align: center;
+}
+
+.text-wrapper{
+    position: absolute;
+    transform: translate(10px, -196px);
+}
+
+.col-one, .col-two{
+    padding: auto;
+    text-align: left;
+    display: grid;
+    line-height: 1.8rem;
+    float: left;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.col-one a, .col-two a, .copy-right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copy-right{
+    font-size: 0.7rem;
+    display: inline-block;
+    color: #fff;
+}
 .footer-bg,
-.footer-mobile,
-.text-wrapper,
 .clouds {
     display: none;
 }
