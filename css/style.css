@@ -5,17 +5,27 @@
 
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
 }
 
 .wrapper {
     margin: 0px;
     padding: 0px;
     /* zoom: 80%; */
+    /* display: flex;
+    flex-direction: column; */
+}
+.main-content{
+    /* min-height: calc(100vh - 645px); */
 }
 
 .inner-wrapper {
-    /* width: 100%; */
+    margin-top: 4rem;
+    /* min-height: calc(100vh - 945px); */
+    /* display: flex;
+    flex-direction: column; */
 }
+
 
 .logo,
 .background,
@@ -26,8 +36,11 @@ html {
     position: absolute;
 }
 
-.logo{
-    width: 30%;
+.logo {
+    z-index: 1;
+    width: 27%;
+    top: 0%;
+    left: 4%;
 }
 
 .background {
@@ -36,24 +49,67 @@ html {
     height: 100vw;
 }
 
-.ufo{
+.ufo {
     width: 60%;
-    top: 7%;
-    left: 17%;
+    top: 26vw;
+    left: 18vw;
 }
 
-.cow{
+.cow {
     width: 30%;
+    top: 68vw;
+    left: 33vw;
 }
 
-.moops{
-    width: 30%;
+.moops {
+    width: 25%;
+    left: 34vw;
+    top: 59vw;
+    transform: rotate(-7deg);
+}
+
+.action{
+    position: relative;
+    text-align: center;
+    top: 105vw;
+    /* left: 50%; */
+    /* transform: translate(-90px, 0px); */
+}
+
+.action p{
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #51BEAB;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-weight: 600;
+    outline: none;
+}
+
+button:hover {
+    transition: 0.5s;
+    transform: translate(0px, -5px);
+    background-color: #6DCFBB;
+    box-shadow: 0px 6px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+button:active {
+    background-color: rgb(190, 255, 242);
+    color: #919191;
 }
 
 .footer-bg,
 .footer-mobile,
 .text-wrapper,
-.action,
-.clouds{
+.clouds {
     display: none;
 }
