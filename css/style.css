@@ -10,7 +10,7 @@ html {
 .wrapper {
     margin: 0px;
     padding: 0px;
-    zoom: 80%;
+    /* zoom: 80%; */
 }
 
 .inner-wrapper {
@@ -24,28 +24,17 @@ html {
 .moops,
 .cow {
     position: absolute;
-    /* left: 50%;
-    top: 50%; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* position: absolute;
-    margin: 0px;
-    padding: 0px;
-    transform: scale(0.6); */
 }
 
-.background {
-    z-index: 999;
-    width: 130vw;
-    height: 130vw;
+.background, .clouds {
+    width: 380px;
+    height: 380px;
     object-fit: cover;
 }
 
 .footer-bg,
 .footer-mobile,
 .text-wrapper,
-.action, 
-.clouds {
+.action{
     display: none;
 }
