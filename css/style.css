@@ -26,15 +26,16 @@ html {
     position: absolute;
 }
 
-.background, .clouds {
-    width: 380px;
-    height: 380px;
+.background {
     object-fit: cover;
+    width: 100vw;
+    height: 100vw;
 }
 
 .footer-bg,
 .footer-mobile,
 .text-wrapper,
-.action{
+.action,
+.clouds{
     display: none;
 }

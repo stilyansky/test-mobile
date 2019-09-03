@@ -1,0 +1,5 @@
+@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape){
+    .background {
+      height: 667px;
+    }
+  }
