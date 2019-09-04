@@ -1,6 +1,13 @@
-@media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape){
+@media all and (max-width: 330px){
+  .col-one, .col-two{
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+/* @media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape){
     .background {
       width: 375px;  
       height: 375px;
     }
-  }
+  } */
