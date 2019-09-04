@@ -1,5 +1,7 @@
-@media all and (max-width: 330px){
-  .col-one, .col-two{
+@media all and (max-width: 330px) {
+
+  .col-one,
+  .col-two {
     font-size: 1rem;
     line-height: 1.4rem;
   }
@@ -11,3 +13,80 @@
       height: 375px;
     }
   } */
+
+@media all and (min-width: 570px) {
+  .logo {
+    width: 15%;
+    top: 2vw;
+    left: 4vw;
+  }
+
+  .background {
+    width: 80vw;
+    height: 80vw;
+    top: 17vw;
+    left: 10vw;
+  }
+
+  .ufo {
+    width: 41%;
+    top: 28vw;
+    left: 28vw;
+  }
+
+  .cow {
+    width: 25%;
+    top: 60vw;
+    left: 36vw;
+  }
+
+  .moops {
+    width: 20%;
+    left: 37vw;
+    top: 51vw;
+  }
+
+  .action {
+    top: 90vw;
+  }
+
+  .text-wrapper {
+    margin: 0px;
+    display: grid;
+    top: 7vw;
+  }
+  
+  .main-content {
+    min-height: 100vw;
+  } 
+
+  .col-one, .col-two{
+    text-align: left;
+    display: grid;
+    line-height: 1.5rem;
+    float: left;
+    padding-right: 2rem;
+    font-size: 0.7rem;
+}
+
+  .footer {
+    position: relative;
+    top: 0vw;
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-evenly;  */
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .footer-bg {
+    align-items: right;
+  }
+
+  .footer-desktop {
+    display: unset;
+    width: 80vw;
+  }
+}
