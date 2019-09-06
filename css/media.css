@@ -7,12 +7,8 @@
   }
 }
 
-/* @media all and (device-width: 375px) and (device-height: 667px) and (orientation:landscape){
-    .background {
-      width: 375px;  
-      height: 375px;
-    }
-  } */
+
+
 
 @media all and (min-width: 570px) {
   .logo {
@@ -249,7 +245,13 @@
 
   .main-content {
     min-height: calc(100vh + 56px);
-    transform: translate(0px, -140px)  scale(0.6);
+    transform: translate(0px, -140px) scale(0.63);
+  }
+
+  .logo {
+    transform: scale(0.8);
+    top: 5vw;
+    left: 9vw;
   }
 
   .action {
@@ -257,12 +259,12 @@
   }
 
   .action p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   button {
-    padding: 1.3rem 2.8rem;
-    font-size: 1.7rem;
+    padding: 1.5rem 3.1rem;
+    font-size: 2rem;
   }
 
   .text-wrapper {
@@ -293,26 +295,27 @@
   }
 }
 
-@media all and (min-width: 1370px) {
+@media all and (min-width: 1365px) {
   .logo {
     transform: scale(0.8);
-    top: 2vw;
+    top: 5vw;
     left: 9vw;
   }
 
 
   .main-content {
     min-height: calc(100vh + 88px);
-    transform: translate(0px, -160px) scale(0.7);
+    transform: translate(0px, -160px) scale(0.63);
   }
 
   .text-wrapper {
-    top: 8vw; 
+    top: 8vw;
   }
 
-  .action{
+  .action {
     z-index: 999;
   }
+
   .action p {
     font-size: 3rem;
   }
@@ -351,4 +354,60 @@
   }
 }
 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrapper {
+    transform: translate(0px, 0px) scale(1);
+    height: 100vh;
+  }
 
+  .main-content {
+    min-height: calc(100vh - 314px);
+    transform: translate(0px, 30px) scale(1);
+  }
+
+  .logo {
+    transform: scale(1.2);
+    top: 6vw;
+    left: 9vw;
+  }
+
+  .action {
+    top: 82vw;
+  }
+
+  .action p {
+    font-size: 3rem;
+  }
+
+  button {
+    padding: 1.5rem 3.1rem;
+    font-size: 2rem;
+  }
+
+  .text-wrapper {
+    z-index: 1;
+    top: 11vw;
+    margin-left: 0rem;
+  }
+
+  .footer-desktop {
+    object-fit: unset;
+    width: 881px;
+    height: 333px;
+    transform: translate(130px, 10px);
+  }
+
+  .col-one,
+  .col-two {
+    line-height: 2.4rem;
+    font-size: 1.3rem;
+    padding-right: 1.3rem;
+    transform: translate(35px, -32px);
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    margin-top: -1rem;
+  }
+}

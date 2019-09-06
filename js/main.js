@@ -6,7 +6,7 @@ window.onload=function(){
     if ( w >= targetWidth) {     
         const cowFloat = TweenMax.to('.cow', 3, {y: -50, rotation: 5});
         const moopsFloat = TweenMax.to('.moops', 4, {y: 5,opacity: 0.2, rotation:-2});
-        const ufoFloat = TweenMax.to('.ufo', 5, {x: 5, rotation: 3});
+        const ufoFloat = TweenMax.to('.ufo', 4, {x: 15, rotation: 3});
         const cloudsFloat = TweenMax.to('.clouds', 90, {x: 60});
         
         cowFloat.yoyo(true).repeat(-1);
