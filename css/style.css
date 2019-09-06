@@ -3,7 +3,8 @@
     padding: 0px;
 }
 
-html, body {
+html,
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     margin: 0px;
@@ -17,7 +18,8 @@ html, body {
     /* display: flex;
     flex-direction: column; */
 }
-.main-content{
+
+.main-content {
     /* min-height: calc(100vh - 645px); */
 }
 
@@ -70,7 +72,7 @@ html, body {
     transform: rotate(-7deg);
 }
 
-.action{
+.action {
     z-index: 1;
     position: relative;
     text-align: center;
@@ -79,8 +81,14 @@ html, body {
     /* transform: translate(-90px, 0px); */
 }
 
-.action p{
+.action p {
     font-size: 1.5rem;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 button {
@@ -96,13 +104,25 @@ button {
     transition: 0.5s;
     font-weight: 600;
     outline: none;
+    overflow: hidden;
 }
 
-button:hover {
-    transition: 0.5s;
-    transform: translate(0px, -5px);
-    background-color: #6DCFBB;
-    box-shadow: 0px 6px 13px -5px rgba(0, 0, 0, 0.75);
+button:focus {
+    outline: 0;
+}
+
+button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
 }
 
 button:active {
@@ -110,14 +130,46 @@ button:active {
     color: #919191;
 }
 
-.footer{
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+}
+
+button:hover {
+    background: #51BEAB;
+    cursor: pointer;
+}
+
+button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: 0.7s;
+}
+
+button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.7s;
+}
+
+
+.footer {
     position: absolute;
     top: 165vw;
     margin: 0px;
     padding: 0px;
 }
 
-.footer-mobile{
+.footer-mobile {
     margin: 0px;
     padding: 0px;
     width: 100vw;
@@ -126,17 +178,19 @@ button:active {
 
 
 
-.text-wrapper, .links-wrapper{
+.text-wrapper,
+.links-wrapper {
     display: inline-block;
     text-align: center;
 }
 
-.text-wrapper{
+.text-wrapper {
     position: absolute;
     margin: 15px 0 0 33px;
 }
 
-.col-one, .col-two{
+.col-one,
+.col-two {
     text-align: left;
     display: grid;
     line-height: 1.8rem;
@@ -145,12 +199,14 @@ button:active {
     font-size: 1rem;
 }
 
-.col-one a, .col-two a, .copy-right a {
+.col-one a,
+.col-two a,
+.copy-right a {
     text-decoration: none;
     color: #fff;
 }
 
-.copy-right{
+.copy-right {
     font-size: 0.7rem;
     display: inline-block;
     color: #fff;
